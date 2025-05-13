@@ -45,7 +45,7 @@ Follow these steps to view the project on your local machine:
 
 If you have Git installed:
 ```bash
-git clone
+git clone https://github.com/bjeptum/Kids_zone_shop.git
 ```
 Or download the ZIP:
 
@@ -76,7 +76,7 @@ kids-zone-shop/
 
 ├── images/
 
-│   └── (product images, logo, etc.)
+│   └── (product images)
 
 └── README.md
 
