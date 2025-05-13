@@ -3,43 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids Fun Zone - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kids Fun Zone</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.jpg" alt="Kids Fun Zone Logo">
-        </div>
+        <div class="logo">Kids Fun Zone</div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section class="hero">
-            <h1>Welcome to Kids Fun Zone!</h1>
-            <p>Where imagination meets play!</p>
-            <button class="cta-button">Explore Toys</button>
-        </section>
-
-        <section class="featured">
-            <h2>Featured Products</h2>
-            <div class="product-grid">
-                <!-- Featured products will be added here with JavaScript -->
+        <h1>Welcome to Kids Fun Zone!</h1>
+        <p>Your one-stop shop for the best toys and games for kids!</p>        <div class="product-container">
+            <div class="product">
+                <img src="images/toy1.jpg" alt="Building Blocks Set">
+                <h2>Building Blocks Set</h2>
+                <p>KES 2,999</p>
+                <p>Colorful building blocks for endless creativity!</p>
+                <button onclick="addToCart('Building Blocks Set', 2999)">Add to Cart</button>
             </div>
-        </section>
+            <div class="product">
+                <img src="images/toy2.jpg" alt="Educational Tablet">
+                <h2>Educational Tablet</h2>
+                <p>KES 4,799</p>
+                <p>Fun learning games for preschoolers</p>
+                <button onclick="addToCart('Educational Tablet', 4799)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/toy3.jpg" alt="Plush Teddy Bear">
+                <h2>Plush Teddy Bear</h2>
+                <p>KES 1,499</p>
+                <p>Soft and cuddly companion for your child</p>
+                <button onclick="addToCart('Plush Teddy Bear', 1499)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/toy4.jpg" alt="Art Supplies Kit">
+                <h2>Art Supplies Kit</h2>
+                <p>KES 3,299</p>
+                <p>Everything your little artist needs</p>
+                <button onclick="addToCart('Art Supplies Kit', 3299)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/toy5.jpg" alt="Soccer Ball">
+                <h2>Soccer Ball</h2>
+                <p>KES 1,199</p>
+                <p>Durable size 4 soccer ball for kids</p>
+                <button onclick="addToCart('Soccer Ball', 1199)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/toy6.jpg" alt="Jump Rope">
+                <h2>Jump Rope</h2>
+                <p>KES 799</p>
+                <p>Colorful jump rope with comfortable handles</p>
+                <button onclick="addToCart('Jump Rope', 799)">Add to Cart</button>
+            </div>
+        </div>
     </main>
-
     <footer>
-        <p>&copy; 2025 Kids Fun Zone. All rights reserved.</p>
+        <p>&copy; 2025 Kids Fun Zone. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
